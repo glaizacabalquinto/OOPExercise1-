@@ -1,0 +1,30 @@
+public class BicycleRegistration
+{
+	public static void main(String [] Args){
+
+		Bicycle bike1 ,bike2;
+		String owner1 , owner2;
+		String tagNo1, tagNo2;
+
+		bike1 = new Bicycle();
+		bike1 . setOwnerName("Adam Smith");
+
+		bike2= new Bicycle();
+		bike2.setOwnerName("Ben Jones");
+
+		owner1 = bike1.getOwnerName();
+		owner2 = bike2.getOwnerName();
+
+		bike1 = new Bicycle();
+		bike1.setid("0319-JSF");
+
+		bike2 = new Bicycle();
+		bike2.setid("0208-JMA");
+
+		tagNo1 = bike1.getid();
+		tagNo2=bike2.getid();
+
+		System.out.println(owner1 + " owns a bicycle"  + " and "  + tagNo1  +  " is the id number of his bicycle");
+		System.out.println(owner2 + " also owns a bicycle"  +  " and "  +  tagNo2  +  " is the id number of his bicycle");
+	}
+}
